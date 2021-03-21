@@ -1,0 +1,40 @@
+$cBlack: black;
+
+body {
+  text-align: center;
+}
+
+.rect {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: $cBlack;
+  animation: sk-bouncedelay 1.4s;
+  animation-timing-function: ease;
+  // animation-delay: 3s;
+　//繰り返し回数
+  animation-iteration-count: infinite;
+  /*reverseで100%→0%
+    alternateで0→100%→0%
+    alternate-reverseで100%→0%→100% */
+  //animation-direction: alternate-reverse;
+   animation-fill-mode: both;
+  //animation-play-state: paused;
+   transform: scale(0);
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@keyframes sk-bouncedelay {
+  0% ,50%{
+    transform: scale(0.5);
+    background-color: $cBlack;
+  }
+
+  100% {
+    transform: scale(0.7);
+    background-color: purple;
+  }
+}

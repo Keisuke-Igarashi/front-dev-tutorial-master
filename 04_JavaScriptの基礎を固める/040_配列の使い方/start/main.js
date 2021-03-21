@@ -1,0 +1,15 @@
+// const arry = new Array(1,2,3,4,5,6);
+const arry = [1,2,3,4,5,6,"true","false"];
+console.log(arry);
+const val = arry[5];
+console.log(val);
+arry.push('new item');
+console.log(arry);
+arry.unshift('new item2');
+console.log(arry);
+const val2 = arry.pop();
+console.log(arry);
+console.log(val2);
+const val3 = arry.shift();
+console.log(arry);
+console.log(val3);

@@ -1,0 +1,10 @@
+.rect {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: orangered;
+  // transform: scale(1.5,1.5) translateY(100px);
+  // transform : translate(0px,100px);  
+  transform : translateX(50px) scaleY(2.0);
+  transform-origin: center center;
+}
